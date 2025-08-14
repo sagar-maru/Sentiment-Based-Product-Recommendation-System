@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  sentiment-app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    container_name: sentiment_recommender
+    environment:
+      - FLASK_ENV=production
+
+  sentiment-tests:
+    build: .
+    command: pytest -v --html=report.html --self-contained-html
+    volumes:
+      - .:/app
+    container_name: sentiment_tests
