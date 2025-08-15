@@ -74,8 +74,8 @@ flowchart TD
 
 ### **1️⃣ Clone Repository**
 ```bash
-git clone https://github.com/your-username/sentiment_reco_project_v2.git
-cd sentiment_reco_project_v2
+git clone https://github.com/sagar-maru/Sentiment-Based-Product-Recommendation-System.git
+cd Sentiment-Based-Product-Recommendation-System
 ```
 
 ### **2️⃣ Create Virtual Environment**
@@ -92,8 +92,8 @@ pip install -r requirements.txt
 
 `requirements.txt` includes:
 ```txt
-scikit-learn==1.5.0
-pandas==2.2.1
+scikit-learn==1.2.2
+pandas==2.3.1
 numpy==1.26.4
 flask==3.0.0
 nltk==3.8.1
@@ -174,13 +174,22 @@ http://localhost:5000
 sentiment_reco_project_v2/
 │── models/                      # Pre-trained models
 │   ├── top_sentiment_classifier_model.pkl
+│   ├── final_recommendation_model.pkl
+│   ├── logistic_regression_tuned_model.pkl
+│   ├── random_forest_base_model.pkl
+│   ├── random_forest_tuned_model.pkl
+│   ├── xgboost_tuned_model.pkl
 │   ├── tfidf_vectorizer.pkl
+│   ├── cleansed_data.pkl
 │
 │── cli/
 │   ├── recommender_cli.py        # Command-line interface
 │
+│── templates/
+│   ├── index.html               # User Interface
+│
 │── tests/
-│   ├── test_recommender.py       # Pytest test cases
+│   ├── test_model.py             # Pytest test cases
 │
 │── app.py                        # Flask API entry point
 │── model.py                      # SentimentRecommender class
@@ -221,6 +230,14 @@ sentiment_reco_project_v2/
 - 📚 [NLTK Documentation](https://www.nltk.org/)
 - 🐳 [Docker Documentation](https://docs.docker.com/)
 - 🧪 [Pytest Documentation](https://docs.pytest.org/en/stable/)
+
+---
+
+## 📌 Useful Links
+
+🔗 **Kaggle Notebook**: [Sentiment Based Product Recommendations System](https://www.kaggle.com/code/marusagar/sentiment-based-product-recommendations-system/notebook)  
+🔗 **Kaggle Profile**: [Sagar Maru](https://www.kaggle.com/marusagar) *(You can send me a message on Kaggle for any information, issues, or concerns. I will get back to you as soon as I can.)*  
+🔗 **GitHub Profile**: [sagar-maru](https://github.com/sagar-maru)  
 
 ---
 
